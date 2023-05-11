@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'manrope_extralightregular';
+    src: url('assets/manrope-variablefont_wght-webfont.woff2') format('woff2'),
+         url('assets/manrope-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	border: 1px solid black;
+}
+
+p {
+	margin: 0px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 100px 1fr;
+}
+
+.header {
+	grid-column: 2;
+	grid-row: 1;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.sidebar {
+	grid-column: 1;
+	grid-row: 1 / -1;
+	background: #15803d;
+	font-family: manrope_extralightregular, sans-serif;
+}
+
+.logo {
+	display: grid;
+	grid-template-columns: 32px 1fr;
+	gap: 16px;
+	padding: 24px;
+	font-size: 24px;
+	color: #fff;
+}
+
+.menu-1 {
+	display: grid;
+	grid-template-columns: 25px 1fr;
+	grid-template-rows: repeat(6, 1fr);
+	gap: 16px;
+	padding: 24px;
+	color: #fff;
+}
+
+.menu-2 {
+	display: grid;
+	grid-template-columns: 25px 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	gap: 16px;
+	padding: 24px;
+	color: #fff;
+}
+
+.main {
+	grid-column: 2;
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	background: #e5e7eb;
+}
+
+.search-bar {
+	display: grid;
+	grid-template-columns: 25px 1fr;
+	gap: 16px;
+	padding: 24px;
+}
+
+.search {
+	border: none;
+	border-radius: 16px;
+	background: #eee;
+}
+
+.user-info {
+	grid-column: 2;
+}
+
+.greeting {
+	grid-row: 2;
+}
+
+.buttons {
+	grid-column: 2;
+	grid-row: 2;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	justify-content: center;
+}
+
+button {
+	background: #15803d;
+	border: none;
+	border-radius: 16px;
+	padding: 8px 16px;
+	color: #fff;
+	font-family: manrope_extralightregular, sans-serif;
+	font-size: 14px;
+	margin: 0px 8px;
+}
+
+.projects {
+	grid-row: 1 / -1;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.announcements {
+	grid-column: 2;
+}
+
+.trending {
+	grid-column: 2;
+	grid-row: 2;
+}
+
+.icon {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
